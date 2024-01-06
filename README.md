@@ -1,7 +1,7 @@
 <div align="center">
     <img src="assets/images/frontendmentor-logo.svg" alt="Frontend Mentor logo" width="80">
     <h1>Single Price Grid Component</h1>
-    <a href="">ꜰʀᴏɴᴛᴇɴᴅ ᴍᴇɴᴛᴏʀ ꜱᴏʟᴜᴛɪᴏɴ</a>
+    <a href="https://www.frontendmentor.io/solutions/single-price-grid-component-OJ5-pb-VLg">ꜰʀᴏɴᴛᴇɴᴅ ᴍᴇɴᴛᴏʀ ꜱᴏʟᴜᴛɪᴏɴ</a>
     <br>
     <br>
     <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white" alt="HTML5">
