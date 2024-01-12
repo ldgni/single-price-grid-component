@@ -56,24 +56,30 @@ main {
 .intro__title {
   color: #3ae9e6;
   font-size: 1.25rem;
+  letter-spacing: -0.01563rem;
   margin-bottom: 1.5rem;
 }
 
 @media (min-width: 40rem) {
   .intro__title {
     font-size: 1.5rem;
+    letter-spacing: -0.01563rem;
   }
 }
 
 .intro__subtitle {
   color: #d0ff00;
   font-size: 0.9375rem;
+  line-height: 1.25rem;
+  letter-spacing: -0.01169rem;
   margin-bottom: 1rem;
 }
 
 @media (min-width: 40rem) {
   .intro__subtitle {
     font-size: 1.125rem;
+    line-height: inherit;
+    letter-spacing: -0.01406rem;
     margin-bottom: 0.69rem;
   }
 }
@@ -81,11 +87,13 @@ main {
 .intro__text {
   color: #ffffff;
   line-height: 1.625rem;
+  letter-spacing: -0.01094rem;
 }
 
 @media (min-width: 40rem) {
   .intro__text {
     font-size: 1rem;
+    letter-spacing: -0.0125rem;
   }
 }
 
@@ -104,6 +112,7 @@ main {
 
 .plan__title {
   font-size: 1.125rem;
+  letter-spacing: -0.01406rem;
   margin-bottom: 1.12rem;
 }
 
@@ -117,17 +126,20 @@ main {
 .fee__price {
   font-size: 2rem;
   font-weight: 700;
+  letter-spacing: -0.025rem;
 }
 
 .fee__recurrence {
   font-size: 1rem;
   line-height: 1.625rem;
+  letter-spacing: -0.0125rem;
   opacity: 0.5;
 }
 
 .plan__description {
   font-size: 1rem;
   line-height: 1.625rem;
+  letter-spacing: -0.0125rem;
   margin-bottom: 1.62rem;
 }
 
@@ -136,6 +148,7 @@ main {
   color: #005f8e;
   font-size: 1rem;
   font-weight: 700;
+  letter-spacing: -0.0125rem;
   border: none;
   border-radius: 0.3125rem;
   box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
@@ -164,10 +177,13 @@ main {
 
 .about__title {
   font-size: 1.125rem;
+  letter-spacing: -0.01406rem;
   margin-bottom: 1.12rem;
 }
 
 .about__list {
+  line-height: 1.25rem;
+  letter-spacing: -0.01094rem;
   list-style: none;
   opacity: 0.75;
   padding: 0;
