@@ -1,215 +1,169 @@
-:root {
-  --clr-bg: #e6eff5;
-  --clr-primary: #fff;
-  --clr-secondary: #2ab3b1;
-  --clr-tertiary: #c0df33;
-
-  --ff-primary: "Karla", sans-serif;
-  --fs-base: 0.875rem;
-  --fw-base: 400;
-}
-
-/* FONTS */
-
-@font-face {
-  font-family: "Karla";
-  src: url("../assets/fonts/Karla-Regular.woff2") format("woff2"),
-    url("../assets/fonts/Karla-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Karla";
-  src: url("../assets/fonts/Karla-Bold.woff2") format("woff2"),
-    url("../assets/fonts/Karla-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-/* RESET */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  -webkit-font-smoothing: antialiased;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-}
-
-button {
-  font: inherit;
-}
-
-ul {
-  list-style: none;
-}
-
 /* GENERAL */
 
 body {
-  background-color: var(--clr-bg);
-  font-family: var(--ff-primary);
-  font-size: var(--fs-base);
-  font-weight: var(--fw-base);
-  color: var(--clr-primary);
-  padding: 4.2rem 2rem;
+  background-color: #e6eff5;
+  color: #fff;
+  font-family: "Karla", sans-serif;
+  font-size: 0.875rem;
   display: grid;
   place-content: center;
   min-height: 100vh;
 }
 
+/* UTILITY */
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  white-space: nowrap;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+}
+
 /* MAIN */
 
 main {
-  border-radius: 0.5rem;
+  border-radius: 0.3125rem;
   overflow: hidden;
   box-shadow: 0px 15px 30px 0px rgba(0, 81, 171, 0.15);
-  max-width: 39.6875rem;
+  max-width: 40rem;
+  margin: 4.2rem 2rem;
 }
 
-/* INTRO */
+@media (min-width: 40rem) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* MAIN INTRO */
 
 .main__intro {
-  background-color: var(--clr-primary);
+  background-color: #005f8e;
   padding: 1.75rem 1.5rem 2rem 1.5rem;
 }
 
+@media (min-width: 40rem) {
+  .main__intro {
+    grid-column: span 2;
+    padding: 2.5rem;
+  }
+}
+
 .intro__title {
-  color: var(--clr-secondary);
+  color: #3ae9e6;
   font-size: 1.25rem;
-  letter-spacing: -0.01563rem;
   margin-bottom: 1.5rem;
 }
 
+@media (min-width: 40rem) {
+  .intro__title {
+    font-size: 1.5rem;
+  }
+}
+
 .intro__subtitle {
-  color: var(--clr-tertiary);
+  color: #d0ff00;
   font-size: 0.9375rem;
-  line-height: 1.25rem;
-  letter-spacing: -0.01169rem;
   margin-bottom: 1rem;
 }
 
-.intro__text {
-  color: #9aa7be;
-  line-height: 1.625rem;
-  letter-spacing: -0.01094rem;
+@media (min-width: 40rem) {
+  .intro__subtitle {
+    font-size: 1.125rem;
+    margin-bottom: 0.69rem;
+  }
 }
 
-/* PLAN */
+.intro__text {
+  color: #ffffff;
+  line-height: 1.625rem;
+}
+
+@media (min-width: 40rem) {
+  .intro__text {
+    font-size: 1rem;
+  }
+}
+
+/* MAIN PLAN */
 
 .main__plan {
+  background-color: #0e1728;
   padding: 1.5rem;
-  background-color: var(--clr-secondary);
+}
+
+@media (min-width: 40rem) {
+  .main__plan {
+    padding: 2.5rem;
+  }
 }
 
 .plan__title {
   font-size: 1.125rem;
-  letter-spacing: -0.01406rem;
-  margin-bottom: 1.13rem;
+  margin-bottom: 1.12rem;
 }
 
 .plan__fee {
   display: flex;
-  gap: 0.69rem;
   align-items: center;
+  gap: 0.69rem;
   margin-bottom: 0.25rem;
 }
 
 .fee__price {
   font-size: 2rem;
   font-weight: 700;
-  letter-spacing: -0.025rem;
 }
 
 .fee__recurrence {
   font-size: 1rem;
   line-height: 1.625rem;
-  letter-spacing: -0.0125rem;
   opacity: 0.5;
 }
 
-.plan__desc {
+.plan__description {
   font-size: 1rem;
   line-height: 1.625rem;
-  letter-spacing: -0.0125rem;
-  margin-bottom: 1.63rem;
+  margin-bottom: 1.62rem;
 }
 
 .plan__btn {
-  background-color: var(--clr-tertiary);
-  color: var(--clr-primary);
-  border-radius: 0.3125rem;
-  border: none;
-  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+  background-color: #d0ff00;
+  color: #005f8e;
   font-size: 1rem;
   font-weight: 700;
-  letter-spacing: -0.0125rem;
+  border: none;
+  border-radius: 0.3125rem;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+  padding: 0.91rem 0;
   width: 100%;
-  padding: 0.91rem;
   cursor: pointer;
 }
 
-/* ABOUT */
+/* MAIN ABOUT */
 
 .main__about {
+  background-color: #041959cc;
   padding: 1.5rem;
-  background-color: rgba(42, 179, 177, 0.8);
+}
+
+@media (min-width: 40rem) {
+  .main__about {
+    padding: 2.5rem;
+  }
 }
 
 .about__title {
   font-size: 1.125rem;
-  letter-spacing: -0.01406rem;
   margin-bottom: 1.12rem;
 }
 
 .about__list {
-  line-height: 1.25rem;
-  letter-spacing: -0.01094rem;
+  list-style: none;
   opacity: 0.75;
-}
-
-/* MEDIA QUERIES */
-
-@media (min-width: 40rem) {
-  main {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .main__intro {
-    grid-column: span 2 / span 2;
-    padding: 2.5rem;
-  }
-
-  .intro__title {
-    font-size: 1.5rem;
-    letter-spacing: -0.01875rem;
-  }
-
-  .intro__subtitle {
-    font-size: 1.125rem;
-    letter-spacing: -0.01406rem;
-    margin-bottom: 0.69rem;
-    line-height: normal;
-  }
-
-  .intro__text {
-    font-size: 1rem;
-    letter-spacing: -0.0125rem;
-  }
-
-  .main__plan,
-  .main__about {
-    padding: 2.5rem;
-  }
+  padding: 0;
 }
