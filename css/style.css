@@ -92,13 +92,13 @@ main {
 /* MAIN PLAN */
 
 .main__plan {
-  background-color: #0e1728;
+  background-color: #0c1d3b;
   padding: 1.5rem;
 }
 
 @media (min-width: 40rem) {
   .main__plan {
-    padding: 2.5rem;
+    padding: 2.5rem 2.44rem 2.44rem 2.5rem;
   }
 }
 
@@ -142,6 +142,11 @@ main {
   padding: 0.91rem 0;
   width: 100%;
   cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.plan__btn:is(:hover, :focus) {
+  background-color: #9bcb00;
 }
 
 /* MAIN ABOUT */
